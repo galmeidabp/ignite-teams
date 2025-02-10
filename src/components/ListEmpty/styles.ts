@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import { DefaultTheme } from "styled-components/native";
 
 export const Container = styled.View`
   flex: 1;
@@ -8,5 +9,5 @@ export const Container = styled.View`
 
 export const Message = styled.Text`
   text-align: center;
-  color: ${({theme} => theme.COLORS.GRAY_300)};
+  color: ${({theme}: {theme: DefaultTheme}) => theme.COLORS.GRAY_300};
 `;

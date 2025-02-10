@@ -1,4 +1,4 @@
-import { Container } from "@components/Header/styles";
+import { Container } from "./styles";
 import { Subtitle, Title } from "./styles";
 
 type Props = {

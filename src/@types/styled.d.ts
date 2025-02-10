@@ -1,6 +1,8 @@
-import "styled-components";
-import { theme } from "../theme"; // Verifique se o caminho está correto
+import { theme } from "@theme/index";
+import "styled-components/native";
 
-declare module "styled-components" {
+declare module 'styled-components/native' {
+  type ThemeType = typeof theme
+
   export interface DefaultTheme extends ThemeType {}
 }
